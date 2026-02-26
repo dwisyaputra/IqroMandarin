@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_light">
+
+    <!-- Header Row: page info + counts -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:gravity="center_vertical"
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/tv_halaman_counter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Halaman 1 / 5"
+            android:textSize="13sp"
+            android:textColor="@color/text_secondary" />
+
+        <TextView
+            android:id="@+id/tv_item_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5 item"
+            android:textSize="13sp"
+            android:textColor="@color/text_secondary" />
+
+    </LinearLayout>
+
+    <!-- Lock Overlay -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/lock_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:cardBackgroundColor="#FFFFEBEE"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="0dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="🔒 Selesaikan halaman sebelumnya dulu untuk membuka halaman ini."
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textColor="@color/red_tone" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Item RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_items"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:clipToPadding="false" />
+
+    <!-- Bottom Controls -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:elevation="8dp"
+        android:padding="12dp">
+
+        <!-- Read progress -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id="@+id/tv_read_count"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Dibaca: 0 / 5 kali"
+                android:textSize="13sp"
+                android:textColor="@color/text_secondary" />
+
+            <ProgressBar
+                android:id="@+id/progress_read"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="100dp"
+                android:layout_height="8dp"
+                android:max="100"
+                android:progress="0"
+                android:progressTint="@color/green_primary" />
+
+        </LinearLayout>
+
+        <!-- Audio Controls Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_play_all"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="4dp"
+                android:text="🔊 Dengarkan Semua"
+                android:textSize="13sp"
+                app:backgroundTint="@color/blue_tone"
+                app:cornerRadius="10dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_record"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:text="🎙 Rekam Suara"
+                android:textSize="13sp"
+                app:backgroundTint="@color/purple_tone"
+                app:cornerRadius="10dp" />
+
+        </LinearLayout>
+
+        <!-- Playback button (hidden until recorded) -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_playback"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginBottom="8dp"
+            android:text="▶️ Putar Rekaman Kamu"
+            android:textSize="13sp"
+            android:visibility="gone"
+            app:backgroundTint="#FF6D00"
+            app:cornerRadius="10dp" />
+
+        <!-- Main Actions Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_tambah"
+                android:layout_width="48dp"
+                android:layout_height="56dp"
+                android:layout_marginEnd="8dp"
+                android:text="➕"
+                android:textSize="18sp"
+                app:backgroundTint="@color/background_light"
+                app:strokeColor="@color/green_primary"
+                app:strokeWidth="2dp"
+                app:cornerRadius="12dp"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_lancar"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:text="✅  Saya Sudah Lancar!"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:backgroundTint="@color/green_primary"
+                app:cornerRadius="14dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

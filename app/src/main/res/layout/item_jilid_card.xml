@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="12dp"
+    android:layout_marginVertical="8dp"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <!-- Icon/Nomor Jilid -->
+        <TextView
+            android:id="@+id/tv_jilid_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/circle_background"
+            android:gravity="center"
+            android:text="📖"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="16dp">
+
+            <TextView
+                android:id="@+id/tv_jilid_nomor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jilid 1"
+                android:textSize="12sp"
+                android:textColor="@color/green_primary"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_jilid_nama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Konsonan Awal"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary" />
+
+            <TextView
+                android:id="@+id/tv_jilid_cina"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="声母"
+                android:textSize="14sp"
+                android:textColor="@color/text_secondary"
+                android:fontFamily="serif" />
+
+            <TextView
+                android:id="@+id/tv_jilid_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deskripsi singkat jilid ini..."
+                android:textSize="12sp"
+                android:textColor="@color/text_secondary"
+                android:layout_marginTop="4dp"
+                android:maxLines="2"
+                android:ellipsize="end" />
+
+            <ProgressBar
+                android:id="@+id/progress_jilid"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_marginTop="8dp"
+                android:progressTint="@color/green_primary" />
+
+        </LinearLayout>
+
+        <!-- Status Badge -->
+        <TextView
+            android:id="@+id/tv_status_badge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="4dp"
+            android:text="Aktif"
+            android:textSize="10sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:background="@drawable/badge_background" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

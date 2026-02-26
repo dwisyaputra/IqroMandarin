@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="4dp"
+    android:layout_marginVertical="4dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="@color/card_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Top Row: Kategori badge + Mastery + SRS box -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id="@+id/tv_kategori"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="INITIAL"
+                android:textSize="10sp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/badge_background"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="3dp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/iv_mastery"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@android:drawable/star_on"
+                android:layout_marginEnd="4dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_srs_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Box 1"
+                android:textSize="10sp"
+                android:textColor="@color/text_secondary"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <!-- Main Content Row: Hanzi + Pinyin + Play button -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <!-- Left: Hanzi (big) -->
+            <TextView
+                android:id="@+id/tv_hanzi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="一"
+                android:textSize="52sp"
+                android:textColor="@color/text_primary"
+                android:fontFamily="serif"
+                android:visibility="gone" />
+
+            <!-- Middle: Pinyin + Indo + Arti -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_pinyin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="yī"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/red_tone"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:id="@+id/tv_indo_pron"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🇮🇩 i (i panjang)"
+                    android:textSize="13sp"
+                    android:textColor="@color/text_secondary"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:id="@+id/tv_arti"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Satu"
+                    android:textSize="15sp"
+                    android:textColor="@color/text_primary"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!-- Right: Play Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_play"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="0dp"
+                android:text="🔊"
+                android:textSize="18sp"
+                app:cornerRadius="24dp"
+                app:strokeColor="@color/green_primary" />
+
+        </LinearLayout>
+
+        <!-- Contoh (example) -->
+        <TextView
+            android:id="@+id/tv_contoh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="📝 contoh..."
+            android:textSize="12sp"
+            android:textColor="@color/text_secondary"
+            android:background="@color/green_light"
+            android:padding="8dp"
+            android:lineSpacingExtra="4dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

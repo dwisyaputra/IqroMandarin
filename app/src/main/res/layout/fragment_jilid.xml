@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_light">
+
+    <!-- Jilid description -->
+    <TextView
+        android:id="@+id/tv_jilid_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:textSize="14sp"
+        android:textColor="@color/text_secondary"
+        android:background="@color/green_light"
+        android:gravity="center" />
+
+    <!-- Tab Layout for Halaman -->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabMode="scrollable"
+        app:tabGravity="start"
+        app:tabSelectedTextColor="@color/green_primary"
+        app:tabIndicatorColor="@color/green_primary"
+        app:tabTextColor="@color/text_secondary" />
+
+    <!-- ViewPager2 for Halaman pages -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+{
+  "initials": [
+    {"initial": "b", "indo_like": "p (papa soft)", "contoh": "bā (pa - delapan)"},
+    {"initial": "p", "indo_like": "p (dengan napas/aspirasi)", "contoh": "pà (pha - takut)"},
+    {"initial": "m", "indo_like": "m (seperti mama)", "contoh": "mā (ma - ibu)"},
+    {"initial": "f", "indo_like": "f (seperti foto)", "contoh": "fà (fa - rambut)"},
+    {"initial": "d", "indo_like": "t (seperti tata soft)", "contoh": "dà (ta - besar)"},
+    {"initial": "t", "indo_like": "t (dengan napas kuat)", "contoh": "tā (tha - dia)"},
+    {"initial": "n", "indo_like": "n (seperti nina)", "contoh": "nǐ (ni - kamu)"},
+    {"initial": "l", "indo_like": "l (seperti lalu)", "contoh": "lè (le - senang)"},
+    {"initial": "g", "indo_like": "k (seperti kaki soft)", "contoh": "gē (ke - abang)"},
+    {"initial": "k", "indo_like": "k (dengan napas kuat)", "contoh": "kàn (khan - lihat)"},
+    {"initial": "h", "indo_like": "h (seperti hari)", "contoh": "hǎo (hao - baik)"},
+    {"initial": "j", "indo_like": "c (seperti cacing soft)", "contoh": "jī (ci - ayam)"},
+    {"initial": "q", "indo_like": "c (dengan napas/aspirasi)", "contoh": "qù (chü - pergi)"},
+    {"initial": "x", "indo_like": "s (seperti siang tipis)", "contoh": "xué (syue - belajar)"},
+    {"initial": "zh", "indo_like": "j (lidah ditekuk ke atas)", "contoh": "zhōng (jong - tengah)"},
+    {"initial": "ch", "indo_like": "c (lidah ditekuk + napas)", "contoh": "chī (chr - makan)"},
+    {"initial": "sh", "indo_like": "sy (lidah ditekuk ke atas)", "contoh": "shì (syr - adalah)"},
+    {"initial": "r", "indo_like": "r (seperti r tapi bergetar)", "contoh": "rén (ren - orang)"},
+    {"initial": "z", "indo_like": "dz (seperti dzip)", "contoh": "zài (dzai - di/ada)"},
+    {"initial": "c", "indo_like": "ts (seperti 'ts' di tsunami)", "contoh": "cì (tsi - kali)"},
+    {"initial": "s", "indo_like": "s (seperti satu)", "contoh": "sì (si - empat)"}
+  ],
+  "finals": [
+    {"final": "a", "indo_like": "a (apa)", "contoh": "mā (ibu)"},
+    {"final": "o", "indo_like": "o (seperti oh)", "contoh": "wǒ (saya)"},
+    {"final": "e", "indo_like": "e (seperti pepes)", "contoh": "hē (minum)"},
+    {"final": "i", "indo_like": "i (ini)", "contoh": "nǐ (kamu)"},
+    {"final": "u", "indo_like": "u (itu)", "contoh": "wǔ (lima)"},
+    {"final": "ü", "indo_like": "u (bibir bulat, lidah spt i)", "contoh": "yú (ikan)"}
+  ],
+  "hanzi": [
+    {"hanzi": "一", "pinyin": "yī", "indo_like": "i (panjang)", "arti": "satu", "contoh": "第一 dì-yī (pertama)"},
+    {"hanzi": "二", "pinyin": "èr", "indo_like": "er (lidah gulung)", "arti": "dua", "contoh": "二月 èryuè (Februari)"},
+    {"hanzi": "三", "pinyin": "sān", "indo_like": "san", "arti": "tiga", "contoh": "三个人 sān gè rén"},
+    {"hanzi": "人", "pinyin": "rén", "indo_like": "ren", "arti": "orang", "contoh": "中国人 Zhōngguórén"},
+    {"hanzi": "大", "pinyin": "dà", "indo_like": "ta", "arti": "besar", "contoh": "大学 dàxué (Uni)"},
+    {"hanzi": "小", "pinyin": "xiǎo", "indo_like": "siao", "arti": "kecil", "contoh": "小孩 xiǎohái (anak)"},
+    {"hanzi": "口", "pinyin": "kǒu", "indo_like": "khou", "arti": "mulut", "contoh": "人口 rénkǒu (populasi)"},
+    {"hanzi": "日", "pinyin": "rì", "indo_like": "jr", "arti": "matahari/hari", "contoh": "今日 jīnrì (hari ini)"},
+    {"hanzi": "月", "pinyin": "yuè", "indo_like": "yue", "arti": "bulan", "contoh": "月亮 yuèliàng"},
+    {"hanzi": "山", "pinyin": "shān", "indo_like": "syan", "arti": "gunung", "contoh": "山水 shānshuǐ"}
+  ],
+  "kalimat": [
+    {"kalimat": "你好", "pinyin": "nǐ hǎo", "indo_like": "ni hao", "arti": "halo"},
+    {"kalimat": "我是学生", "pinyin": "wǒ shì xuéshēng", "indo_like": "wo syr syueseng", "arti": "saya siswa"},
+    {"kalimat": "我们要吃饭", "pinyin": "wǒmen yào chīfàn", "indo_like": "women yao chr fan", "arti": "kami ingin makan"},
+    {"kalimat": "我的中文不好", "pinyin": "wǒ de Zhōngwén bù hǎo", "indo_like": "wo te jongwen bu hao", "arti": "Mandarin saya buruk"}
+  ],
+  "cerita": [
+    {"cerita_id": 1, "judul": "Keluarga Saya", "isi": "我有一个家庭。爸爸是老师。妈妈是医生。我是学生。我们很开心。", "pinyin": "Wǒ yǒu yīgè jiātíng. Bàba shì lǎoshī. Māma shì yīshēng. Wǒ shì xuéshēng. Wǒmen hěn kāixīn.", "indo_like": "Wo you i ge ciating. Papa syr lao syr. Mama syr i seng. Wo syr syueseng. Women hen kai sin.", "arti": "Saya punya keluarga. Ayah guru. Ibu dokter. Saya siswa. Kami senang."}
+  ]
+}

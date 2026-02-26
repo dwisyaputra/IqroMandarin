@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Iqro Mandarin</string>
+    <string name="title_dashboard">汉语拼音 · Iqro Mandarin</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_dark_mode">Dark Mode</string>
+    <string name="action_review">Review Hari Ini</string>
+    <string name="btn_lancar">✅ SAYA SUDAH LANCAR!</string>
+    <string name="btn_record">🎙 REKAM SUARA</string>
+    <string name="msg_unlock">Selesaikan halaman ini untuk membuka selanjutnya.</string>
+</resources>
