@@ -10,7 +10,10 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.DialogFragment
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import com.example.iqromandarin.audio.AudioHandler
+import com.example.iqromandarin.adapter.ItemAdapter
 import com.example.iqromandarin.database.AppDatabase
 import com.example.iqromandarin.model.Item
 import com.example.iqromandarin.viewmodel.MainViewModel
