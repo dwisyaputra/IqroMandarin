@@ -82,6 +82,10 @@ class JilidFragment : Fragment() {
         }
     }
 
+    fun goToNextPage(pageIndex: Int) {
+        _binding?.viewPager?.currentItem = pageIndex
+    }
+
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null

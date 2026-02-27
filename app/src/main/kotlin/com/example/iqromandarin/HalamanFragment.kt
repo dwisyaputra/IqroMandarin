@@ -181,8 +181,7 @@ class HalamanFragment : Fragment() {
             view?.postDelayed({
                 parentFragment?.let { parent ->
                     if (parent is JilidFragment) {
-                        val vp = (parent._binding)?.viewPager
-                        vp?.currentItem = halamanIndex + 1
+                        parent.goToNextPage(halamanIndex + 1)
                     }
                 }
             }, 1000)
